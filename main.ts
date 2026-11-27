@@ -3,8 +3,11 @@
 // Deterministic: no network, no randomness, no environment reads.
 import { mkdirSync, writeFileSync } from "node:fs";
 
+// The joke in one breath: Monday personified as a rude early guest
+// (concrete detail: fifteen minutes early), with the turn landing on
+// "Friday is a rumour" — short enough that the punch arrives fast.
 const REVIEW =
-  "Monday arrived uninvited, unshowered and fifteen minutes early, then spent the whole day loudly reminding me that Friday is a rumour and the weekend was a dream.";
+  "Monday arrived uninvited, unshowered and fifteen minutes early, then spent all day reminding me Friday is a rumour and the weekend was a dream.";
 
 const text = REVIEW.trim();
 if (text.length < 1 || text.length > 200) {
